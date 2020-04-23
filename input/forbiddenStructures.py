@@ -440,3 +440,734 @@ u"""
 Geometry could not converge at wB97x-D3/6-311++G(3df,3pd) (alongd ref - xq1492)
 """,
 )
+
+entry(
+    label="strained",
+    group=
+"""
+1  C u0 p0 c0 {2,[S,D,B,T]} {12,[S,D,B,T]}
+2  C u0 p0 c0 {1,[S,D,B,T]} {3,[S,D,B,T]} {7,[S,D,B,T]}
+3  C u0 p0 c0 {2,[S,D,B,T]} {4,[S,D,B,T]}
+4  C u0 p0 c0 {3,[S,D,B,T]} {5,[S,D,B,T]}
+5  C u0 p0 c0 {4,[S,D,B,T]} {6,[S,D,B,T]} {12,[S,D,B,T]}
+6  C u0 p0 c0 {5,[S,D,B,T]} {7,[S,D,B,T]} {8,[S,D,B,T]}
+7  C u[0,1] p0 c0 {2,[S,D,B,T]} {6,[S,D,B,T]}
+8  C u0 p0 c0 {6,[S,D,B,T]} {9,[S,D,B,T]}
+9 C u0 p0 c0 {8,[S,D,B,T]} {10,[S,D,B,T]}
+10 C u0 p0 c0 {9,[S,D,B,T]} {11,[S,D,B,T]}
+11 C u0 p0 c0 {10,[S,D,B,T]} {12,[S,D,B,T]}
+12 N u0 p1 c0 {1,[S,D,B,T]} {5,[S,D,B,T]} {11,[S,D,B,T]}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Strained structure, originally derived from: CN(CCC1C2C=CC3=C([CH]2)CCC2C(N13)=CC=CC=2)C
+""",
+)
+
+entry(
+    label="cCCOO",
+    group=
+"""
+1 C u0 p0 c0 {2,S} {4,S}
+2 C u0 p0 c0 {1,S} {3,S} 
+3 O u0 p2 c0 {2,S} {4,S}
+4 O u0 p2 c0 {1,S} {3,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Strained structure, originally derived from: CN(C)CCCN1C2=CC=C[CH]C23OOC3CC3=CC=CC=C31
+""",
+)
+
+entry(
+    label="CC(=C=NO[O])C=O",
+    species=
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {9,S} {10,S} {11,S}
+2  C u0 p0 c0 {1,S} {3,D} {7,S}
+3  C u0 p0 c0 {2,D} {4,D}
+4  N u0 p1 c0 {3,D} {5,S}
+5  O u0 p2 c0 {4,S} {6,S}
+6  O u1 p2 c0 {5,S}
+7  C u0 p0 c0 {2,S} {8,D} {12,S}
+8  O u0 p2 c0 {7,D}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {7,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="[O]ON=C=C(CO)C",
+    species=
+"""
+multiplicity 2
+1  O u1 p2 c0 {2,S}
+2  O u0 p2 c0 {1,S} {3,S}
+3  N u0 p1 c0 {2,S} {4,D}
+4  C u0 p0 c0 {3,D} {5,D}
+5  C u0 p0 c0 {4,D} {6,S} {8,S}
+6  C u0 p0 c0 {5,S} {7,S} {9,S} {10,S}
+7  O u0 p2 c0 {6,S} {11,S}
+8  C u0 p0 c0 {5,S} {12,S} {13,S} {14,S}
+9  H u0 p0 c0 {6,S}
+10 H u0 p0 c0 {6,S}
+11 H u0 p0 c0 {7,S}
+12 H u0 p0 c0 {8,S}
+13 H u0 p0 c0 {8,S}
+14 H u0 p0 c0 {8,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="CC(=O)[CH]OON",
+    species=
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {9,S} {10,S} {11,S}
+2  C u0 p0 c0 {1,S} {3,D} {4,S}
+3  O u0 p2 c0 {2,D}
+4  C u1 p0 c0 {2,S} {5,S} {6,S}
+5  H u0 p0 c0 {4,S}
+6  O u0 p2 c0 {4,S} {7,S}
+7  O u0 p2 c0 {6,S} {8,S}
+8  N u0 p1 c0 {7,S} {12,S} {13,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {8,S}
+13 H u0 p0 c0 {8,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Conformers did not converge at apfd/def2tzvp
+""",
+)
+
+entry(
+    label="C[C](C#N)ON=O",
+    species=
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {8,S} {9,S} {10,S}
+2  C u1 p0 c0 {1,S} {3,S} {5,S}
+3  C u0 p0 c0 {2,S} {4,T}
+4  N u0 p1 c0 {3,T}
+5  O u0 p2 c0 {2,S} {6,S}
+6  N u0 p1 c0 {5,S} {7,D}
+7  O u0 p2 c0 {6,D}
+8  H u0 p0 c0 {1,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {1,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="[O]ON=C=C",
+    species=
+"""
+multiplicity 2
+1 O u1 p2 c0 {2,S}
+2 O u0 p2 c0 {1,S} {3,S}
+3 N u0 p1 c0 {2,S} {4,D}
+4 C u0 p0 c0 {3,D} {5,D}
+5 C u0 p0 c0 {4,D} {6,S} {7,S}
+6 H u0 p0 c0 {5,S}
+7 H u0 p0 c0 {5,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="C(C#N)OO[C]=O",
+    species=
+"""
+multiplicity 2
+1 C u0 p0 c0 {2,S} {4,S} {8,S} {9,S}
+2 C u0 p0 c0 {1,S} {3,T}
+3 N u0 p1 c0 {2,T}
+4 O u0 p2 c0 {1,S} {5,S}
+5 O u0 p2 c0 {4,S} {6,S}
+6 C u1 p0 c0 {5,S} {7,D}
+7 O u0 p2 c0 {6,D}
+8 H u0 p0 c0 {1,S}
+9 H u0 p0 c0 {1,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Conformers did not converge at apfd/def2tzvp
+""",
+)
+
+entry(
+    label="[O-][NH2+]O[O]",
+    species=
+"""
+multiplicity 2
+1 O u0 p3 c-1 {2,S}
+2 N u0 p0 c+1 {1,S} {3,S} {4,S} {5,S}
+3 H u0 p0 c0 {2,S}
+4 H u0 p0 c0 {2,S}
+5 O u0 p2 c0 {2,S} {6,S}
+6 O u1 p2 c0 {5,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="CC(=COO[NH])O",
+    species=
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {9,S} {10,S} {11,S}
+2  C u0 p0 c0 {1,S} {3,D} {8,S}
+3  C u0 p0 c0 {2,D} {4,S} {12,S}
+4  O u0 p2 c0 {3,S} {5,S}
+5  O u0 p2 c0 {4,S} {6,S}
+6  N u1 p1 c0 {5,S} {7,S}
+7  H u0 p0 c0 {6,S}
+8  O u0 p2 c0 {2,S} {13,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {3,S}
+13 H u0 p0 c0 {8,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="[N]=CNOOC=C(O)C",
+    species=
+"""
+multiplicity 2
+1  N u1 p1 c0 {2,D}
+2  C u0 p0 c0 {1,D} {3,S} {10,S}
+3  N u0 p1 c0 {2,S} {4,S} {11,S}
+4  O u0 p2 c0 {3,S} {5,S}
+5  O u0 p2 c0 {4,S} {6,S}
+6  C u0 p0 c0 {5,S} {7,D} {12,S}
+7  C u0 p0 c0 {6,D} {8,S} {9,S}
+8  O u0 p2 c0 {7,S} {13,S}
+9  C u0 p0 c0 {7,S} {14,S} {15,S} {16,S}
+10 H u0 p0 c0 {2,S}
+11 H u0 p0 c0 {3,S}
+12 H u0 p0 c0 {6,S}
+13 H u0 p0 c0 {8,S}
+14 H u0 p0 c0 {9,S}
+15 H u0 p0 c0 {9,S}
+16 H u0 p0 c0 {9,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="O=[C]CC(=O)O",
+    species=
+"""
+multiplicity 2
+1 O u0 p2 c0 {2,D}
+2 C u1 p0 c0 {1,D} {3,S}
+3 C u0 p0 c0 {2,S} {4,S} {7,S} {8,S}
+4 C u0 p0 c0 {3,S} {5,D} {6,S}
+5 O u0 p2 c0 {4,D}
+6 O u0 p2 c0 {4,S} {9,S}
+7 H u0 p0 c0 {3,S}
+8 H u0 p0 c0 {3,S}
+9 H u0 p0 c0 {6,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="CC(=[C]OON)O",
+    species=
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {8,S} {9,S} {10,S}
+2  C u0 p0 c0 {1,S} {3,D} {7,S}
+3  C u1 p0 c0 {2,D} {4,S}
+4  O u0 p2 c0 {3,S} {5,S}
+5  O u0 p2 c0 {4,S} {6,S}
+6  N u0 p1 c0 {5,S} {11,S} {12,S}
+7  O u0 p2 c0 {2,S} {13,S}
+8  H u0 p0 c0 {1,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {6,S}
+12 H u0 p0 c0 {6,S}
+13 H u0 p0 c0 {7,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="OC(=O)[CH]C#N",
+    species=
+"""
+multiplicity 2
+1 O u0 p2 c0 {2,S} {8,S}
+2 C u0 p0 c0 {1,S} {3,D} {4,S}
+3 O u0 p2 c0 {2,D}
+4 C u1 p0 c0 {2,S} {5,S} {6,S}
+5 H u0 p0 c0 {4,S}
+6 C u0 p0 c0 {4,S} {7,T}
+7 N u0 p1 c0 {6,T}
+8 H u0 p0 c0 {1,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="O=C=[C]C#N",
+    species=
+"""
+multiplicity 2
+1 O u0 p2 c0 {2,D}
+2 C u0 p0 c0 {1,D} {3,D}
+3 C u1 p0 c0 {2,D} {4,S}
+4 C u0 p0 c0 {3,S} {5,T}
+5 N u0 p1 c0 {4,T}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="O=C=NC(=C(O)O)C#N",
+    species=
+"""
+1  O u0 p2 c0 {2,D}
+2  C u0 p0 c0 {1,D} {3,D}
+3  N u0 p1 c0 {2,D} {4,S}
+4  C u0 p0 c0 {3,S} {5,D} {8,S}
+5  C u0 p0 c0 {4,D} {6,S} {7,S}
+6  O u0 p2 c0 {5,S} {10,S}
+7  O u0 p2 c0 {5,S} {11,S}
+8  C u0 p0 c0 {4,S} {9,T}
+9  N u0 p1 c0 {8,T}
+10 H u0 p0 c0 {6,S}
+11 H u0 p0 c0 {7,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="OC(=O)C(=[N])C#N",
+    species=
+"""
+multiplicity 2
+1 O u0 p2 c0 {2,S} {8,S}
+2 C u0 p0 c0 {1,S} {3,D} {4,S}
+3 O u0 p2 c0 {2,D}
+4 C u0 p0 c0 {2,S} {5,D} {6,S}
+5 N u1 p1 c0 {4,D}
+6 C u0 p0 c0 {4,S} {7,T}
+7 N u0 p1 c0 {6,T}
+8 H u0 p0 c0 {1,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="NC(=O)N=CC(=O)[O]",
+    species=
+"""
+multiplicity 2
+1  N u0 p1 c0 {2,S} {9,S} {10,S}
+2  C u0 p0 c0 {1,S} {3,D} {4,S}
+3  O u0 p2 c0 {2,D}
+4  N u0 p1 c0 {2,S} {5,D}
+5  C u0 p0 c0 {4,D} {6,S} {11,S}
+6  C u0 p0 c0 {5,S} {7,D} {8,S}
+7  O u0 p2 c0 {6,D}
+8  O u1 p2 c0 {6,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {5,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="N=C=C(C(=O)[O])C#N",
+    species=
+"""
+multiplicity 2
+1 N u0 p1 c0 {2,D} {9,S}
+2 C u0 p0 c0 {1,D} {3,D}
+3 C u0 p0 c0 {2,D} {4,S} {7,S}
+4 C u0 p0 c0 {3,S} {5,D} {6,S}
+5 O u0 p2 c0 {4,D}
+6 O u1 p2 c0 {4,S}
+7 C u0 p0 c0 {3,S} {8,T}
+8 N u0 p1 c0 {7,T}
+9 H u0 p0 c0 {1,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="N#CC(C(=O)[O])N=C=O",
+    species=
+"""
+multiplicity 2
+1  N u0 p1 c0 {2,T}
+2  C u0 p0 c0 {1,T} {3,S}
+3  C u0 p0 c0 {2,S} {4,S} {7,S} {10,S}
+4  C u0 p0 c0 {3,S} {5,D} {6,S}
+5  O u0 p2 c0 {4,D}
+6  O u1 p2 c0 {4,S}
+7  N u0 p1 c0 {3,S} {8,D}
+8  C u0 p0 c0 {7,D} {9,D}
+9  O u0 p2 c0 {8,D}
+10 H u0 p0 c0 {3,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="N#CC(C(=O)O)(C#N)[O]",
+    species=
+"""
+multiplicity 2
+1  N u0 p1 c0 {2,T}
+2  C u0 p0 c0 {1,T} {3,S}
+3  C u0 p0 c0 {2,S} {4,S} {7,S} {9,S}
+4  C u0 p0 c0 {3,S} {5,D} {6,S}
+5  O u0 p2 c0 {4,D}
+6  O u0 p2 c0 {4,S} {10,S}
+7  C u0 p0 c0 {3,S} {8,T}
+8  N u0 p1 c0 {7,T}
+9  O u1 p2 c0 {3,S}
+10 H u0 p0 c0 {6,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+converges into a TS, very interesting
+""",
+)
+
+entry(
+    label="N#CC(C(=O)[O])(C#N)O",
+    species=
+"""
+multiplicity 2
+1  N u0 p1 c0 {2,T}
+2  C u0 p0 c0 {1,T} {3,S}
+3  C u0 p0 c0 {2,S} {4,S} {7,S} {9,S}
+4  C u0 p0 c0 {3,S} {5,D} {6,S}
+5  O u0 p2 c0 {4,D}
+6  O u1 p2 c0 {4,S}
+7  C u0 p0 c0 {3,S} {8,T}
+8  N u0 p1 c0 {7,T}
+9  O u0 p2 c0 {3,S} {10,S}
+10 H u0 p0 c0 {9,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="O=NC=C(C(=O)[O])C#N",
+    species=
+"""
+multiplicity 2
+1  O u0 p2 c0 {2,D}
+2  N u0 p1 c0 {1,D} {3,S}
+3  C u0 p0 c0 {2,S} {4,D} {10,S}
+4  C u0 p0 c0 {3,D} {5,S} {8,S}
+5  C u0 p0 c0 {4,S} {6,D} {7,S}
+6  O u0 p2 c0 {5,D}
+7  O u1 p2 c0 {5,S}
+8  C u0 p0 c0 {4,S} {9,T}
+9  N u0 p1 c0 {8,T}
+10 H u0 p0 c0 {3,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="[O]C(=O)C(=C)C#N",
+    species=
+"""
+multiplicity 2
+1 O u1 p2 c0 {2,S}
+2 C u0 p0 c0 {1,S} {3,D} {4,S}
+3 O u0 p2 c0 {2,D}
+4 C u0 p0 c0 {2,S} {5,D} {6,S}
+5 C u0 p0 c0 {4,D} {8,S} {9,S}
+6 C u0 p0 c0 {4,S} {7,T}
+7 N u0 p1 c0 {6,T}
+8 H u0 p0 c0 {5,S}
+9 H u0 p0 c0 {5,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+""",
+)
+
+entry(
+    label="[CH2]C(=COON)O",
+    species=
+"""
+multiplicity 2
+1  C u1 p0 c0 {2,S} {3,S} {4,S}
+2  H u0 p0 c0 {1,S}
+3  H u0 p0 c0 {1,S}
+4  C u0 p0 c0 {1,S} {5,D} {9,S}
+5  C u0 p0 c0 {4,D} {6,S} {10,S}
+6  O u0 p2 c0 {5,S} {7,S}
+7  O u0 p2 c0 {6,S} {8,S}
+8  N u0 p1 c0 {7,S} {11,S} {12,S}
+9  O u0 p2 c0 {4,S} {13,S}
+10 H u0 p0 c0 {5,S}
+11 H u0 p0 c0 {8,S}
+12 H u0 p0 c0 {8,S}
+13 H u0 p0 c0 {9,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+Interesting and unexpected
+""",
+)
+
+entry(
+    label="CC(=O)C(C#N)OO[NH]",
+    species=
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {11,S} {12,S} {13,S}
+2  C u0 p0 c0 {1,S} {3,D} {4,S}
+3  O u0 p2 c0 {2,D}
+4  C u0 p0 c0 {2,S} {5,S} {7,S} {14,S}
+5  C u0 p0 c0 {4,S} {6,T}
+6  N u0 p1 c0 {5,T}
+7  O u0 p2 c0 {4,S} {8,S}
+8  O u0 p2 c0 {7,S} {9,S}
+9  N u1 p1 c0 {8,S} {10,S}
+10 H u0 p0 c0 {9,S}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {1,S}
+13 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {4,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+Interesting and unexpected, broke into NO
+""",
+)
+
+entry(
+    label="N#CNOO[CH]C(=O)C",
+    species=
+"""
+multiplicity 2
+1  N u0 p1 c0 {2,T}
+2  C u0 p0 c0 {1,T} {3,S}
+3  N u0 p1 c0 {2,S} {4,S} {11,S}
+4  O u0 p2 c0 {3,S} {5,S}
+5  O u0 p2 c0 {4,S} {6,S}
+6  C u1 p0 c0 {5,S} {7,S} {8,S}
+7  H u0 p0 c0 {6,S}
+8  C u0 p0 c0 {6,S} {9,D} {10,S}
+9  O u0 p2 c0 {8,D}
+10 C u0 p0 c0 {8,S} {12,S} {13,S} {14,S}
+11 H u0 p0 c0 {3,S}
+12 H u0 p0 c0 {10,S}
+13 H u0 p0 c0 {10,S}
+14 H u0 p0 c0 {10,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+Interesting, a radical next to O-O broke it into two fragments
+""",
+)
+
+entry(
+    label="[O]ON=C=C(ON)C",
+    species=
+"""
+multiplicity 2
+1  O u1 p2 c0 {2,S}
+2  O u0 p2 c0 {1,S} {3,S}
+3  N u0 p1 c0 {2,S} {4,D}
+4  C u0 p0 c0 {3,D} {5,D}
+5  C u0 p0 c0 {4,D} {6,S} {8,S}
+6  O u0 p2 c0 {5,S} {7,S}
+7  N u0 p1 c0 {6,S} {9,S} {10,S}
+8  C u0 p0 c0 {5,S} {11,S} {12,S} {13,S}
+9  H u0 p0 c0 {7,S}
+10 H u0 p0 c0 {7,S}
+11 H u0 p0 c0 {8,S}
+12 H u0 p0 c0 {8,S}
+13 H u0 p0 c0 {8,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+Did not converge at CBS-QB3
+breaks into O2
+""",
+)
+
+entry(
+    label="NC(=O)N=CC(=O)O",
+    species=
+"""
+1  N u0 p1 c0 {2,S} {9,S} {10,S}
+2  C u0 p0 c0 {1,S} {3,D} {4,S}
+3  O u0 p2 c0 {2,D}
+4  N u0 p1 c0 {2,S} {5,D}
+5  C u0 p0 c0 {4,D} {6,S} {11,S}
+6  C u0 p0 c0 {5,S} {7,D} {8,S}
+7  O u0 p2 c0 {6,D}
+8  O u0 p2 c0 {6,S} {12,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {5,S}
+12 H u0 p0 c0 {8,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+physical, but problematic at low [MeOH]
+""",
+)
+
+entry(
+    label="NC(=O)N=[C]C(=O)O",
+    species=
+"""
+multiplicity 2
+1  N u0 p1 c0 {2,S} {9,S} {10,S}
+2  C u0 p0 c0 {1,S} {3,D} {4,S}
+3  O u0 p2 c0 {2,D}
+4  N u0 p1 c0 {2,S} {5,D}
+5  C u1 p0 c0 {4,D} {6,S}
+6  C u0 p0 c0 {5,S} {7,D} {8,S}
+7  O u0 p2 c0 {6,D}
+8  O u0 p2 c0 {6,S} {11,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {8,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+physical, but problematic at low [MeOH]
+""",
+)
+
+entry(
+    label="NC(=O)N=CC(=O)O",
+    species=
+"""
+1  N u0 p1 c0 {2,S} {9,S} {10,S}
+2  C u0 p0 c0 {1,S} {3,D} {4,S}
+3  O u0 p2 c0 {2,D}
+4  N u0 p1 c0 {2,S} {5,D}
+5  C u0 p0 c0 {4,D} {6,S} {11,S}
+6  C u0 p0 c0 {5,S} {7,D} {8,S}
+7  O u0 p2 c0 {6,D}
+8  O u0 p2 c0 {6,S} {12,S}
+9  H u0 p0 c0 {1,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {5,S}
+12 H u0 p0 c0 {8,S}
+""",
+    shortDesc=u"""""",
+    longDesc=
+u"""
+physical, but problematic at low [MeOH]
+""",
+)
