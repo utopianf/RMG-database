@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-name = "Fake_HOCK_rearrangement/groups"
+name = "API_Fake_HOCK_rearrangement"
 shortDesc = u""
 longDesc = u"""
 he Hock fragmentation (or rearrangement) is a well-known reaction for benzylic, allylic and dienylic hydroperoxides. 
