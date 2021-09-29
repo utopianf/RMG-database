@@ -123,6 +123,10 @@ surface = {
     'Surface_vdW_to_Bidentate',
     'Surface_Abstraction_Single_vdW',
     'Surface_Adsorption_Dissociative_Double',
+    'Surface_Carbonate_Deposition',
+    'Surface_Carbonate_F_CO_Decomposition',
+    'Surface_Carbonate_2F_Decomposition',
+    'Surface_Carbonate_CO_Decomposition'
 }
 
 # Surface chemistry families that are under development and not yet working well.
