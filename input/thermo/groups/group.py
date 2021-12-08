@@ -59231,6 +59231,293 @@ entry(
 """,
 )
 
+entry(
+    index = 2659,
+    label = "Li",
+    group =
+    """
+    1 * Li u0
+    """,
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([19.8159,20.448,20.5125,20.7879,22.0157,23.6191,24.026],'J/(mol*K)'),
+               H298=(-84970.3,'J/mol'), S298=(136.842,'J/(mol*K)'),
+               Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+    """
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]O', '[Li]OCC', '[Li]N', '[Li]NCC', '[Li]N(C)C', 'CCN(C)[Li]', '[LiH]', '[Li]OO', '[Li]OCCCCC=O',
+ '[Li]OCCCC=O', '[Li]OC(=O)OCCO', '[Li]C', '[Li]Cl', '[Li]OC1CCCO1', '[Li]OC1CCCCO1', '[Li]OC1CCO1',
+ '[Li]OCCC=O', '[Li]OC1CO1', '[Li]OCC=O', '[Li]OC(=O)OC', '[Li]N=C', '[Li]OC=C', '[Li]S', '[Li]OC=O',
+ '[Li]OC1OCCO1', '[Li]OCO',
+'[Li]OS(=O)(=C)C', '[Li]OC', '[Li]NC', '[Li]CC', '[Li]OCF', '[Li]F', '[Li]OCCl']
+""",
+)
+
+entry(
+    index = 2660,
+    label = "Li-S",
+    group =
+"""
+1 * Li u0 p0 c0 {2,S}
+2   S  u0 p2 {1,S}
+""",
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([26.4574,32.7608,32.5247,33.5479,45.961,53.4886,44.017],'J/(mol*K)'),
+               H298=(23463.7,'J/mol'), S298=(231.011,'J/(mol*K)'),
+                Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+"""
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]S']
+""",
+)
+
+entry(
+    index = 2661,
+    label = "Li-O",
+    group =
+"""
+1 * Li u0 p0 c0 {2,S}
+2   O  u0 p2 c0 {1,S}
+""",
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([12.5942,14.1534,15.2969,16.6155,18.5202,20.6693,20.1449],'J/(mol*K)'),
+               H298=(-139089,'J/mol'), S298=(92.6844,'J/(mol*K)'),
+               Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+"""
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]O', '[Li]OCC', '[Li]OO', '[Li]OCCCCC=O', '[Li]OCCCC=O', '[Li]OC(=O)OCCO',
+ '[Li]OC1CCCO1', '[Li]OC1CCCCO1', '[Li]OC1CCO1', '[Li]OCCC=O', '[Li]OC1CO1', '[Li]OCC=O',
+ '[Li]OC(=O)OC', '[Li]OC=C', '[Li]OC=O', '[Li]OC1OCCO1', '[Li]OCO',
+'[Li]OS(=O)(=C)C', '[Li]OC', '[Li]OCF', '[Li]OCCl']
+""",
+)
+
+entry(
+    index = 2663,
+    label = "Li-OC",
+    group =
+"""
+1   O  u0 p2 c0 {2,S} {3,S}
+2 * Li u0 p0 c0 {1,S}
+3   C  u0 p0 c0 {1,S}
+""",
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([12.5188,13.7784,14.7243,16.1301,18.3036,20.6494,19.8155],'J/(mol*K)'),
+               H298=(-139472,'J/mol'), S298=(89.1961,'J/(mol*K)'),
+               Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+"""
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]OCC', '[Li]OCCCCC=O', '[Li]OCCCC=O', '[Li]OC(=O)OCCO', '[Li]OC1CCCO1',
+'[Li]OC1CCCCO1', '[Li]OC1CCO1', '[Li]OCCC=O', '[Li]OC1CO1', '[Li]OCC=O', '[Li]OC(=O)OC',
+ '[Li]OC=C', '[Li]OC=O', '[Li]OC1OCCO1',
+'[Li]OCO', '[Li]OC', '[Li]OCF', '[Li]OCCl']
+""",
+)
+
+entry(
+    index = 2664,
+    label = "Li-OCH2C",
+    group =
+"""
+1   C  u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2   O  u0 p2 c0 {1,S} {6,S}
+3   C  u0 p0 c0 {1,S}
+4   H  u0 p0 c0 {1,S}
+5   H  u0 p0 c0 {1,S}
+6 * Li u0 p0 c0 {2,S}
+""",
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([7.73572,10.9539,14.5646,17.3606,20.4205,23.7027,28.3325],'J/(mol*K)'),
+               H298=(-106946,'J/mol'), S298=(71.3401,'J/(mol*K)'),
+               Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+"""
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]OCC', '[Li]OCCCCC=O', '[Li]OCCCC=O', '[Li]OCCC=O', '[Li]OCC=O']
+""",
+)
+
+entry(
+    index = 2665,
+    label = "Li-OCH2O",
+    group =
+"""
+1   C  u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2   O  u0 p2 c0 {1,S} {6,S}
+3   O  u0 p2 c0 {1,S}
+4   H  u0 p0 c0 {1,S}
+5   H  u0 p0 c0 {1,S}
+6 * Li u0 p0 c0 {2,S}
+""",
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([12.2707,5.599,4.48972,6.65251,12.1521,17.5501,23.288],'J/(mol*K)'),
+               H298=(-113164,'J/mol'), S298=(105.227,'J/(mol*K)'),
+               Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+"""
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]OCO']
+""",
+)
+
+entry(
+    index = 2666,
+    label = "Li-OCOdO",
+    group =
+"""
+1   C  u0 p0 c0 {2,S} {3,S} {4,D}
+2   O  u0 p2 c0 {1,S} {5,S}
+3   O  u0 p2 c0 {1,S}
+4   O  u0 p2 c0 {1,D}
+5 * Li u0 p0 c0 {2,S}
+""",
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([9.29425,6.5686,6.49669,7.38186,9.33505,12.8073,18.9601],'J/(mol*K)'),
+               H298=(-191444,'J/mol'), S298=(79.4938,'J/(mol*K)'),
+               Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+"""
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]OC(=O)OCCO', '[Li]OC(=O)OC']
+""",
+)
+
+entry(
+    index = 2667,
+    label = "Li-OCring",
+    group =
+"""
+1   O  u0 p2 c0 {2,S} {3,S}
+2 * Li u0 p0 c0 {1,S}
+3   C  u0 p0 c0 r1 {1,S}
+""",
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([13.1701,18.2553,17.9724,19.0919,22.4442,24.1883,11.6091],'J/(mol*K)'),
+               H298=(-152897,'J/mol'), S298=(96.1515,'J/(mol*K)'),
+               Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+"""
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]OC1CCCO1', '[Li]OC1CCCCO1', '[Li]OC1CCO1', '[Li]OC1CO1', '[Li]OC1OCCO1']
+""",
+)
+
+entry(
+    index = 2668,
+    label = "Li-N",
+    group =
+"""
+1 * Li u0 p0 c0 {2,S}
+2   N  u0 p1 c0 {1,S}
+""",
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([35.001,31.8046,27.7158,23.6404,19.5335,17.3388,18.7987],'J/(mol*K)'),
+               H298=(38782.4,'J/mol'), S298=(181.31,'J/(mol*K)'),
+               Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+"""
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]N', '[Li]NCC', '[Li]N(C)C', 'CCN(C)[Li]', '[Li]N=C', '[Li]NC']
+""",
+)
+
+entry(
+    index = 2669,
+    label = "Li-NHC",
+    group =
+"""
+1   N  u0 p1 c0 {2,S} {3,S} {4,S}
+2 * Li u0 p0 c0 {1,S}
+3   C  u0 p0 c0 {1,S}
+4   H  u0 p0 c0 {1,S}
+""",
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([35.8804,32.4188,28.9218,25.616,23.1289,22.4477,26.4318],'J/(mol*K)'),
+               H298=(45648.8,'J/mol'), S298=(212.482,'J/(mol*K)'),
+               Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+"""
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]NCC', '[Li]NC']
+""",
+)
+
+entry(
+    index = 2670,
+    label = "Li-NCC",
+    group =
+"""
+1   N  u0 p1 c0 {2,S} {3,S} {4,S}
+2 * Li u0 p0 c0 {1,S}
+3   C  u0 p0 c0 {1,S}
+4   C  u0 p0 c0 {1,S}
+""",
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([28.6183,28.1527,25.9249,23.657,21.46,19.8191,19.2792],'J/(mol*K)'),
+               H298=(74424.4,'J/mol'), S298=(97.1806,'J/(mol*K)'),
+               Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+"""
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]N(C)C', 'CCN(C)[Li]']
+""",
+)
+
+entry(
+    index = 2671,
+    label = "Li-C",
+    group =
+"""
+1 * Li u0 p0 c0 {2,S}
+2   C  u0 p0 c0 {1,S}
+""",
+    thermo = ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'),
+               Cpdata=([29.4592,28.0886,27.9514,29.1724,33.9256,39.67,51.3042],'J/(mol*K)'),
+               H298=(128282,'J/mol'), S298=(333.399,'J/(mol*K)'),
+               Tmin=(10,'K'), Tmax=(3000,'K')),
+    shortDesc = """Derived from LithiumPrimaryThermo""",
+    longDesc =
+"""
+Fitted to species deltas with group additivity from LithiumPrimaryThermo:
+['[Li]C', '[Li]CC']
+""",
+)
+
+entry(
+    index = 2672,
+    label = "O2d-S6dd",
+    group =
+"""
+1 S6dd u0 p0 c0 {2,S}
+2 * O2s u0 p2 c0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (0,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = """define this group""",
+    longDesc =
+"""
+This associates all the energy of this subgroup with the associated S6dd contribution
+""",
+)
+
 tree(
 """
 L1: R
@@ -61892,6 +62179,17 @@ L1: R
             L4: N5ddc-O2d
             L4: N5ddc-N1dc
         L3: N5tc
+    L2: Li
+        L3: Li-S
+        L3: Li-O
+            L4: Li-OC
+                L5: Li-OCH2C
+                L5: Li-OCH2O
+                L5: Li-OCOdO
+                L5: Li-OCring
+        L3: Li-N
+            L4: Li-NHC
+            L4: Li-NCC
+        L3: Li-C
 """
 )
-
