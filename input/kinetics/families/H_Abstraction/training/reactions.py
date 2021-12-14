@@ -43515,3 +43515,41 @@ CASPT2(2e,2o)/cc-pvdz (VRC-TST)
 )
 
 
+entry(
+    index = 3109,
+    label = "CH3_r3 + HLi <=> CH4b + Li",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(79732.1,'cm^3/(mol*s)'), n=2.61156, Ea=(12.1363,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(3000,'K'), solute=SoluteData(S=3.39470212956669,B=1.6022203760198037,E=1.4946262264125265,L=10.49010693814182,A=0.4943151788298517,comment='')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: LithiumPrimaryKinetics
+Original entry: [CH3] + [Li][H] <=> [Li] + C
+TS method summary for TS1 in [CH3] + [Li][H] <=> [Li] + C:
+
+The method that generated the best TS guess and its output used for the optimization: user guess 0
+
+
+TS external symmetry: 3, TS optical isomers: 1
+
+Optimized TS geometry:
+Li      2.70871273   -0.01490895    0.00158396
+C      -0.96949251    0.00074660    0.00030355
+H       1.04579798   -0.00431498   -0.00287904
+H      -1.12331191   -0.67940335   -0.82540465
+H      -1.11719084    1.05691017   -0.17519024
+H      -1.11679945   -0.37438412    1.00313346
+
+
+No rotors considered for this TS.
+ccsd(t)-f12/cc-pvdz-f12//wb97x-d3/def2-tzvpused COSMO TZPD-Fine with energy files
+    fit to dGsolv298 for library solvents:
+    ["water","butanol","dimethylformamide","dimethylsulfoxide","ethanol","acetonitrile",
+     "ethylacetate","methanol","butan-2-one","cyclohexanone", "N,N-dimethylacetamide",
+    "2-methylpropan-1-ol","propan-2-ol","N-methylformamide","pentan-1-ol",
+    "propan-1-ol", "butan-2-ol", "oxolane", "2-methylpropan-2-ol", "propan-2-one",
+    "methyl acetate", "formamide", "diethyl carbonate", "dimethyl carbonate",]
+    MAE error: 1724.5822620152626 J/mol
+""",
+)
+
