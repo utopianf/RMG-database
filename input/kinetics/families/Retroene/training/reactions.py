@@ -851,3 +851,47 @@ Calculated at CBS-QB3 using TST + 1DSHR approximation by Jeffrey Herron, Xiaorui
 """,
 )
 
+entry(
+    index = 65,
+    label = "C3H5LiO2 <=> C2H3LiO + CH2O-2",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.46545e+14,'s^-1'), n=0.20628, Ea=(62.2385,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(3000,'K'), solute=SoluteData(S=1.7509029646949823,B=2.006218503247397,E=1.143393868363932,L=8.571412669855551,A=0.5404851704510933,comment='')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: LithiumPrimaryKinetics
+Original entry: O=CCCO[Li] <=> [Li]OC=C + C=O
+TS method summary for TS10 in O=CCCO[Li] <=> [Li]OC=C + C=O:
+
+The method that generated the best TS guess and its output used for the optimization: user guess 0
+
+
+TS external symmetry: 1, TS optical isomers: 2
+
+Optimized TS geometry:
+Li      0.67050684   -1.60390085   -0.36093039
+O      -0.92604375   -1.15828311   -0.03727727
+C      -1.60083705   -0.10816047    0.33621254
+O       2.05006768   -0.34074837    0.03435938
+C       1.84701267    0.85995531    0.09314486
+C      -1.65781511    1.09798726   -0.28717014
+H      -2.17928322   -0.21866717    1.26598488
+H       0.96975439    1.32395018   -0.38007248
+H       2.53532757    1.50855856    0.65878630
+H      -1.19345872    1.25604363   -1.25688972
+H      -2.27676986    1.89077262    0.11390132
+
+1D rotors:
+* Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 6], invalidation reason: initial and final points are inconsistent by more than 5.00 kJ/molTwo consecutive points are inconsistent by more than 6.68 kJ/mol
+* Invalidated! pivots: [3, 6], dihedral: [2, 3, 6, 10], invalidation reason: initial and final points are inconsistent by more than 5.00 kJ/molinitial and final points are inconsistent by more than 5.00 kJ/molinitial and final points are inconsistent by more than 5.00 kJ/molinitial and final points are inconsistent by more than 5.00 kJ/mol But unable to propose troubleshooting methods.
+ccsd(t)-f12/cc-pvdz-f12//wb97x-d3/def2-tzvpused COSMO TZPD-Fine with energy files
+    fit to dGsolv298 for library solvents:
+    ["water","butanol","dimethylformamide","dimethylsulfoxide","ethanol","acetonitrile",
+     "ethylacetate","methanol","butan-2-one","cyclohexanone", "N,N-dimethylacetamide",
+    "2-methylpropan-1-ol","propan-2-ol","N-methylformamide","pentan-1-ol",
+    "propan-1-ol", "butan-2-ol", "oxolane", "2-methylpropan-2-ol", "propan-2-one",
+    "methyl acetate", "formamide", "diethyl carbonate", "dimethyl carbonate",]
+    MAE error: 1179.836010787957 J/mol
+""",
+)
+
