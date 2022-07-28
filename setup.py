@@ -29,10 +29,11 @@
 ###############################################################################
 
 try:
-    from distutils.core import setup
-    from distutils.extension import Extension
+    from setuptools import setup
+    from setuptools import Extension
+    from setuptools import find_packages
 except ImportError:
-    print('The distutils package is required to build or install RMG Py.')
+    print('The setuptools package is required to build or install RMG Py.')
 
 scripts = [
     'evansPolanyi.py',
@@ -51,4 +52,5 @@ setup(
     author_email='rmg_dev@mit.edu',
     url='http://reactionmechanismgenerator.github.io/',
     scripts=scripts,
+    packages=find_packages()
 )
